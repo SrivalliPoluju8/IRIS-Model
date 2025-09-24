@@ -13,7 +13,7 @@ CORS(app)
 logging.basicConfig(level=logging.INFO)
 
 # Load the model
-model_path = os.path.join(os.path.dirname(__file__), 'C:/Users/ADMIN/knn_iris_model.pkl')
+model_path = os.path.join(os.path.dirname(__file__))
 model = joblib.load(model_path)
 
 # Serve HTML page
@@ -69,3 +69,4 @@ def health():
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True)
+

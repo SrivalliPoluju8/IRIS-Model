@@ -4,6 +4,7 @@ joblib
 numpy
 logging
 gunicorn 
+scikit_learn
 
 
 

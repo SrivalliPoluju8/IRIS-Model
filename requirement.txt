@@ -1,6 +1,7 @@
-flask
+gflask
 flask_cors
 joblib
 numpy
 logging
+gunicorn=21.2.0
 

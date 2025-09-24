@@ -19,7 +19,7 @@ model = joblib.load(model_path)
 # Serve HTML page
 @app.route('/')
 def home():
- return send_file(os.path.join(os.path.dirname(__file__), 'templates', 'index.html'))
+    return render_template('index.html')
 
 # Prediction endpoint
 @app.route('/predict', methods=['POST'])
@@ -69,6 +69,7 @@ def health():
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
